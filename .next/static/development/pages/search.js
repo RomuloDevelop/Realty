@@ -24793,7 +24793,7 @@ var Index = function Index(props) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /*!****************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fsearch&absolutePagePath=C%3A%5CUsers%5Cromul%5CRealtyApp%5Cpages%5Csearch.tsx ***!
   \****************************************************************************************************************************/
@@ -24816,5 +24816,5 @@ module.exports = dll_1aef2d0bbc0d334d831c;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=search.js.map
