@@ -5,55 +5,6 @@ import Property from '../interfaces/Property';
 import { Container , Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import './search.scss';
 
-const data:Property[] = [{
-  year:2017,
-  bathrooms:4,
-  rooms:3,
-  area:2000,
-  direction:'direccion1'
-},{
-  year:2017,
-  bathrooms:4,
-  rooms:3,
-  area:2000,
-  direction:'direccion2'
-},{
-  year:2017,
-  bathrooms:4,
-  rooms:3,
-  area:2000,
-  direction:'direccion2'
-},{
-  year:2017,
-  bathrooms:4,
-  rooms:3,
-  area:2000,
-  direction:'direccion2'
-},{
-  year:2017,
-  bathrooms:4,
-  rooms:3,
-  area:2000,
-  direction:'direccion2'
-},{
-  year:2017,
-  bathrooms:4,
-  rooms:3,
-  area:2000,
-  direction:'direccion2'
-},{
-  year:2017,
-  bathrooms:4,
-  rooms:3,
-  area:2000,
-  direction:'direccion2'
-},{
-  year:2017,
-  bathrooms:4,
-  rooms:3,
-  area:2000,
-  direction:'direccion2'
-}];
 const Index = (props:{data: Property[]})=>(
   <Layout> 
     <div style={{display:'flex', flexDirection:'row'}}>

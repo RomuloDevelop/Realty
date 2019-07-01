@@ -9,27 +9,25 @@ import {
     NavItem,
     NavLink} from 'reactstrap';
 
+import './Header.scss';
+const NavItemLink = (props:{text:string, href:string})=>(
+  <NavItem>
+    <NavLink><Link href={props.href}><a className="text-light">{props.text}</a></Link></NavLink>
+  </NavItem>
+)
+
 const Header = ()=>{
        return (
-       <Navbar color="light" light expand="md">
-          <NavbarBrand>Delia Lugo / Broker Associate</NavbarBrand>
+       <Navbar style = {{backgroundColor:"#CC9B39"}} expand="md">
+          <NavbarBrand className = "text-light">Delia Lugo / Broker Associate</NavbarBrand>
           <Collapse navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink><Link href="/index"><a>Inicio</a></Link></NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink><Link href="/search"><a>Buscar</a></Link></NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink><Link href="#"><a>Buscar Nuevas</a></Link></NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink><Link href="#"><a>Nosotros</a></Link></NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink><Link href="#"><a>Admin</a></Link></NavLink>
-              </NavItem>
+              <NavItemLink href="/index" text="Inicio"/>
+              <NavItemLink href="/userDetail" text="Usuario"/>
+              <NavItemLink href="/search" text="Buscar"/>
+              <NavItemLink href="#" text="Buscar Nuevas"/>
+              <NavItemLink href="#" text="Nosotros"/>
+              <NavItemLink href="#" text="Admin"/>
             </Nav>
           </Collapse>
         </Navbar>)
